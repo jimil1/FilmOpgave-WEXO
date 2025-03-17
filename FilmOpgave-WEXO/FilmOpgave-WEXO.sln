@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.Domain", "FilmOpgave-WEXO.Domain\FilmOpgave-WEXO.Domain.csproj", "{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.DataAccessLayer", "FilmOpgave-WEXO.DataAccessLayer\FilmOpgave-WEXO.DataAccessLayer.csproj", "{05BEA39F-1AC4-451F-B67D-5B10F8291445}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.BuissnesLogic", "FilmOpgave-WEXO.BuissnesLogic\FilmOpgave-WEXO.BuissnesLogic.csproj", "{7C753924-C865-4818-AA3E-4148786EF561}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C753924-C865-4818-AA3E-4148786EF561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C753924-C865-4818-AA3E-4148786EF561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C753924-C865-4818-AA3E-4148786EF561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C753924-C865-4818-AA3E-4148786EF561}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {845B8CD0-6264-4527-887E-68BBDF5944D4}
+	EndGlobalSection
+EndGlobal
