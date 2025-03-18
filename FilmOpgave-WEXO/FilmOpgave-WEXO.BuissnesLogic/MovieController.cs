@@ -7,6 +7,12 @@ namespace FilmOpgave_WEXO.BuissnesLogic
 {
     class MovieController : ICRUD<Movie>
     {
+        
+
+
+
+
+
         public void Create(Movie entity)
         {
             throw new NotImplementedException();
