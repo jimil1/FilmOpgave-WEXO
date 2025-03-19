@@ -5,15 +5,7 @@ VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.Domain", "FilmOpgave-WEXO.Domain\FilmOpgave-WEXO.Domain.csproj", "{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.DataAccessLayer", "FilmOpgave-WEXO.DataAccessLayer\FilmOpgave-WEXO.DataAccessLayer.csproj", "{05BEA39F-1AC4-451F-B67D-5B10F8291445}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.BuissnesLogic", "FilmOpgave-WEXO.BuissnesLogic\FilmOpgave-WEXO.BuissnesLogic.csproj", "{7C753924-C865-4818-AA3E-4148786EF561}"
-EndProject
-<<<<<<< Updated upstream
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.Webaplication", "FilmOpgave-WEXO.Webaplication\FilmOpgave-WEXO.Webaplication.csproj", "{E98623E0-49F1-42F6-8D9D-C62419E4B5A8}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.UserInterface", "FilmOpgave-WEXO.UserInterface\FilmOpgave-WEXO.UserInterface.csproj", "{87018896-3D99-48E7-B686-53767547CF2A}"
->>>>>>> Stashed changes
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,25 +17,10 @@ Global
 		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05BEA39F-1AC4-451F-B67D-5B10F8291445}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C753924-C865-4818-AA3E-4148786EF561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C753924-C865-4818-AA3E-4148786EF561}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C753924-C865-4818-AA3E-4148786EF561}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C753924-C865-4818-AA3E-4148786EF561}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< Updated upstream
 		{E98623E0-49F1-42F6-8D9D-C62419E4B5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E98623E0-49F1-42F6-8D9D-C62419E4B5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E98623E0-49F1-42F6-8D9D-C62419E4B5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E98623E0-49F1-42F6-8D9D-C62419E4B5A8}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{87018896-3D99-48E7-B686-53767547CF2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87018896-3D99-48E7-B686-53767547CF2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{87018896-3D99-48E7-B686-53767547CF2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{87018896-3D99-48E7-B686-53767547CF2A}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> Stashed changes
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
