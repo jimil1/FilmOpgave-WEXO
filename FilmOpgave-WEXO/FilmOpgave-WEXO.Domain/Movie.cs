@@ -11,9 +11,11 @@ namespace FilmOpgave_WEXO.Domain
         public string Title { get; set; }
         public string Description { get; set; }
         public int ReleaseYear { get; set; }
-        //actors and directors
+        public List<string> Actors { get; set; }
 
-        //cover image
+        public string PosterPath { get; set; }
+
+        public List<Grenre> Grenres { get; set; }
 
 
     }
