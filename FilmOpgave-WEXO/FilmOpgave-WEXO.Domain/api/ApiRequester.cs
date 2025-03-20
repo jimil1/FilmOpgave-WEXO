@@ -8,5 +8,6 @@ namespace FilmOpgave_WEXO.Domain.api
 {
     class ApiRequester
     {
+        
     }
 }

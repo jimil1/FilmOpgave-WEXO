@@ -7,12 +7,12 @@ using System.Text.Json.Serialization;
 
 namespace FilmOpgave_WEXO.Domain
 {
-    public class Grenre
+    public class Genre
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
 
-        [JasonPropertyName("id")]
+        [JsonPropertyName("id")]
         public string Name { get; set; }
 
     }

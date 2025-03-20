@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using MovieModel.api;
-using MovieModel.models;
+using FilmOpgave_WEXO.Domain.api;
+
 
 namespace FilmOpgave_WEXO.Domain.Controller
 {
-    class MovieController
+    public class MovieController
     {
-        private ApiRequster apiRequster;
+        private ApiRequester apiRequster;
 
         public MovieController()
         {
-            this.apiRequster = new ApiRequster();
+            this.apiRequster = new ApiRequester();
         }
 
         //Fetches and deserializes a single movie by ID
@@ -23,7 +22,7 @@ namespace FilmOpgave_WEXO.Domain.Controller
         // <returns>A Movie object or null if not found.</returns>
         public async Task<Movie?> FetchMovieAsync(int movieId)
         {
-            string? jsonResponse = await this.apiRequster.getMocieAsync(movieId);
+            string? jsonResponse = await this.apiRequster.getMovieAsync(movieId);
             if (string.IsNullOrEmpty(jsonResponse))
             {
                 Console.WriteLine($"Failed to fetch movie with ID {movieId}.");
@@ -41,14 +40,13 @@ namespace FilmOpgave_WEXO.Domain.Controller
         }
 
         // Fetches and deserializes movies sorted by genre.
-        // </summary>
         // <param name="genreId">The ID of the genre.</param>
         // <returns>A list of Movie objects.</returns>
         public async Task<List<Movie>> fetchMoviesByGrenreAsync(int genreId)
         {
-            string? jasonResponse = await this.apiRequster.getMoviesByGrenre(genreId);
+            string? jsonResponse = await this.apiRequster.getMoviesByGrenre(genreId);
 
-            if (string.IsnullOrEmpty(jsonResponse))
+            if (string.IsNullOrEmpty(jsonResponse))
             {
                 Console.WriteLine($"Failed to fetch movies for genre {genreId}.");
                 return new List<Movie>();
