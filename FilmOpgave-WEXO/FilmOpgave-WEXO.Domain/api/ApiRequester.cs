@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmOpgave_WEXO.Domain
+namespace FilmOpgave_WEXO.Domain.api
 {
-    public class Grenre
+    class ApiRequester
     {
-
     }
 }
