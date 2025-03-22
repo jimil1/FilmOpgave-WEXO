@@ -1,6 +1,7 @@
 using FilmOpgave_WEXO.Webaplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using FilmOpgave_WEXO.Webaplication.Views
 
 namespace FilmOpgave_WEXO.Webaplication.Controllers
 {

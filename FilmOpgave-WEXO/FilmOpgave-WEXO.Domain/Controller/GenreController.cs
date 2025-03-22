@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using FilmOpgave_WEXO.Domain.api;
-using FilmOpgave_WEXO.Domain.Model;
+
 
 namespace FilmOpgave_WEXO.Domain.Controller
 {
-    public class GrenreController
+    public class GenreController
     {
         private ApiRequester apiRequester;
 
@@ -31,7 +31,7 @@ namespace FilmOpgave_WEXO.Domain.Controller
             }
             try
             {
-                var genreData = JsonSerializer.Deserialize<GenreListResponse>(jsonResponse);
+                var genreData = JsonSerializer.Deserialize<GenreResponse>(jsonResponse);
                 return genreData?.Genres ?? new List<Genre>();
             }
             catch (JsonException e)

@@ -10,11 +10,11 @@ namespace FilmOpgave_WEXO.Domain.Controller
 {
     public class MovieController
     {
-        private ApiRequester apiRequster;
+        private ApiRequester apiRequester;
 
         public MovieController()
         {
-            this.apiRequster = new ApiRequester();
+            this.apiRequester = new ApiRequester();
         }
 
         //Fetches and deserializes a single movie by ID
@@ -22,7 +22,8 @@ namespace FilmOpgave_WEXO.Domain.Controller
         // <returns>A Movie object or null if not found.</returns>
         public async Task<Movie?> FetchMovieAsync(int movieId)
         {
-            string? jsonResponse = await this.apiRequster.getMovieAsync(movieId);
+            string? jsonResponse = await this.apiRequester.GetMovieAsync(movieId);
+
             if (string.IsNullOrEmpty(jsonResponse))
             {
                 Console.WriteLine($"Failed to fetch movie with ID {movieId}.");
@@ -44,7 +45,7 @@ namespace FilmOpgave_WEXO.Domain.Controller
         // <returns>A list of Movie objects.</returns>
         public async Task<List<Movie>> fetchMoviesByGrenreAsync(int genreId)
         {
-            string? jsonResponse = await this.apiRequster.getMoviesByGrenre(genreId);
+            string? jsonResponse = await this.apiRequester.GetMoviesByGenre(genreId);
 
             if (string.IsNullOrEmpty(jsonResponse))
             {
