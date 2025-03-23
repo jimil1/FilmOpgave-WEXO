@@ -12,7 +12,7 @@ namespace FilmOpgave_WEXO.Domain
         [JsonPropertyName("id")]
         public int Id { get; set; }
 
-        [JsonPropertyName("id")]
+        [JsonPropertyName("name")]
         public string Name { get; set; }
 
     }

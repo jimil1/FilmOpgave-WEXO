@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.Domain", "FilmOpgave-WEXO.Domain\FilmOpgave-WEXO.Domain.csproj", "{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmOpgave-WEXO.Webaplication", "FilmOpgave-WEXO.Webaplication\FilmOpgave-WEXO.Webaplication.csproj", "{E98623E0-49F1-42F6-8D9D-C62419E4B5A8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0F5E722-6BF0-4BCE-AB1E-D20032783D8C} = {A0F5E722-6BF0-4BCE-AB1E-D20032783D8C}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

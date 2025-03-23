@@ -42,5 +42,8 @@ namespace FilmOpgave_WEXO.Domain
         [JsonPropertyName("popularity")]
         public double Popularity { get; set; }
 
+        [JsonPropertyName("vote_average")]
+        public double VoteAverage { get; set; }
+
     }
 }

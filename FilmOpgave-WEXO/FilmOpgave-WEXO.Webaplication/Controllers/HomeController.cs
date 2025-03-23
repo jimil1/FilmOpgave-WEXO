@@ -1,7 +1,8 @@
 using FilmOpgave_WEXO.Webaplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using FilmOpgave_WEXO.Domain.Controllers;
+using FilmOpgave_WEXO.Domain.Controller;
+using FilmOpgave_WEXO.Webaplication.VeiwModels;
 
 namespace FilmOpgave_WEXO.Webaplication.Controllers
 {
@@ -44,16 +45,11 @@ namespace FilmOpgave_WEXO.Webaplication.Controllers
 
             foreach (var genre in genres)
             {
-                var movies = await movieController.FetchMoviesByGenreAsync(genre.Id);
+                var movies = await movieController.fetchMoviesByGenreAsync(genre.Id);
                 genreMovieCounts[genre.Id] = movies.Count; // Store movie count for each genre
             }
 
-            var viewModel = new GenreViewModel
-            {
-                Genres = genres,
-                GenreMovieCounts = genreMovieCounts
-            };
-
+            var viewModel = new GenreViewModel(genreMovieCounts, genres);
             return View(viewModel);
 
 
@@ -62,7 +58,7 @@ namespace FilmOpgave_WEXO.Webaplication.Controllers
         // Displays movies by genre.
         public async Task<IActionResult> MoviesByGenre(int genreId)
         {
-            var movies = await movieController.FetchMoviesByGenreAsync(genreId);
+            var movies = await movieController.fetchMoviesByGenreAsync(genreId);
             return View(movies);
         }
 

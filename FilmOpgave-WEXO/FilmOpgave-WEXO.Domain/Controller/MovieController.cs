@@ -43,7 +43,7 @@ namespace FilmOpgave_WEXO.Domain.Controller
         // Fetches and deserializes movies sorted by genre.
         // <param name="genreId">The ID of the genre.</param>
         // <returns>A list of Movie objects.</returns>
-        public async Task<List<Movie>> fetchMoviesByGrenreAsync(int genreId)
+        public async Task<List<Movie>> fetchMoviesByGenreAsync(int genreId)
         {
             string? jsonResponse = await this.apiRequester.GetMoviesByGenre(genreId);
 
