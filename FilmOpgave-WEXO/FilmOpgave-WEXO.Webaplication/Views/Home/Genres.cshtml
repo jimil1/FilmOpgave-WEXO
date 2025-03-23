@@ -1,0 +1,15 @@
+﻿@model FilmOpgave_WEXO.Webaplication.VeiwModels.GenreViewModel
+
+<h2>Movie Genres</h2>
+
+
+<ul id="genreList">
+    @foreach (var genre in Model.Genres)
+    {
+            <li>
+                <a asp-controller="Home" asp-action="MoviesByGenre" asp-route-genreId="@genre.Id">
+                @genre.Name (@Model.GenreMovieCounts[genre.Id] movies)
+                </a>
+            </li>
+    }
+</ul>
